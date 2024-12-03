@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Blogs</title>
+  <link rel="stylesheet" href="/styles.css">  <!-- Link to your CSS file if needed -->
+</head>
+<body>
+  <h1>All Blog Posts</h1>
+
+  <!-- Button to create a new blog post -->
+  <a href="/new-blog" style="margin-bottom: 20px; display: inline-block; padding: 10px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px;">Create New Blog</a>
+
+  <!-- Loop through all the blogs and display them -->
+  <div>
+    <% if (blogs.length > 0) { %>
+      <% blogs.forEach(blog => { %>
+        <div style="margin-bottom: 20px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+          <h2><%= blog.title %></h2>
+          <p><strong>Snippet:</strong> <%= blog.snippet %></p>
+          <p><%= blog.body %></p>
+          <small>Created at: <%= blog.createdAt.toLocaleString() %></small>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No blogs available yet. Start by creating one!</p>
+    <% } %>
+  </div>
+
+  <!-- Link back to the home page -->
+  <a href="/" style="display: block; margin-top: 30px;">Back to Home</a>
+</body>
+</html>

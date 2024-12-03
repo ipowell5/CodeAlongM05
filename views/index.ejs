@@ -1,14 +1,30 @@
-<html>
-  <%- include('partials/head') %>  <!-- Including the head partial -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
 
-  <body>
-    <%- include('partials/nav') %>  <!-- Including the navigation partial -->
+  <!-- Including the head partial -->
+  <%- include('partials/nav') %>  <!-- Including the navigation partial -->
 
-    <div class="blogs content">
-      <h2>All Blogs</h2>
-      <!-- You can add dynamic content for blogs here -->
-    </div>
+  <h1>Welcome to the Blog</h1>
 
+  <!-- Buttons to navigate to the blogs page or create a new blog -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="/blogs" style="padding: 10px 20px; background-color: #4CAF50; color: white; text-decoration: none; border-radius: 5px; margin-right: 20px;">Go to Blogs</a>
+    <a href="/new-blog" style="padding: 10px 20px; background-color: #007BFF; color: white; text-decoration: none; border-radius: 5px;">Create New Blog</a>
+  </div>
+
+  <!-- Dynamic Content for Blogs -->
+  <div class="blogs content">
+    <h2>All Blogs</h2>
+    <!-- Add dynamic blog content here -->
     <%- include('partials/footer') %>  <!-- Including the footer partial -->
-  </body>
+  </div>
+
+</body>
 </html>

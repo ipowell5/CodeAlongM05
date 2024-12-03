@@ -1,0 +1,161 @@
+/* Global Styles */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Whimsical and bubbly font */
+    background-color: #fce0ff; /* Soft pastel pink */
+    color: #6d4c41; /* A soft brown for text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Verdana', sans-serif;
+    color: #4CAF50; /* Pastel green */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.8); /* Slight glow effect */
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin-top: 50px;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+    margin: 20px 0;
+  }
+  
+  h3 {
+    font-size: 2em;
+  }
+  
+  /* Links and Buttons */
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 24px;
+    background-color: #f28ab2; /* Pastel pink */
+    box-shadow: 0 4px 10px rgba(255, 99, 134, 0.3);
+    transition: background-color 0.3s, box-shadow 0.3s ease-in-out;
+  }
+  
+  a:hover {
+    background-color: #f79c42; /* Orange when hovered */
+    box-shadow: 0 4px 12px rgba(255, 99, 134, 0.5);
+  }
+  
+  button {
+    background-color: #f28ab2; /* Pastel pink */
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 24px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 99, 134, 0.2);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #f79c42; /* Orange */
+    transform: scale(1.05);
+  }
+  
+  /* Centered content and containers */
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+  }
+  
+  div.blog-post {
+    background-color: #ffffff; /* Light background for blog posts */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+  }
+  
+  .blog-post h3 {
+    font-size: 2em;
+    color: #4CAF50; /* Pastel green */
+  }
+  
+  .blog-post p {
+    font-size: 1.2em;
+    color: #6d4c41;
+    line-height: 1.6;
+  }
+  
+  /* Buttons Container */
+  div {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button.green {
+    background-color: #4CAF50; /* Pastel green */
+  }
+  
+  button.blue {
+    background-color: #007BFF; /* Bright blue */
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #f79c42; /* Pastel orange */
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 1.1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Footer Links */
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Animation */
+  @keyframes bubblePop {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.1); opacity: 0.8; }
+  }
+  
+  button, a {
+    animation: bubblePop 0.5s ease-in-out infinite alternate;
+
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f6d3e0; /* Matching pastel pink */
+    margin-top: 30px;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+  
+  footer p {
+    color: #5a5a5a;
+    margin: 0;
+  }
+  
+  
